@@ -4,17 +4,16 @@
   "main": "src/app.js",
   "type": "module",
   "scripts": {
-    "start": "nodemon src/app.js",
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
     "initdb": "node src/config/initdb.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "echo \"No build step needed for this application\"",
     "format": "prettier --write .",
     "check-format": "prettier --check ."
   },
-  "keywords": [],
-  "author": "NITESH-DK",
-  "license": "ISC",
-  "description": "The backend boilerplate for node and express",
+  "engines": {
+    "node": "18.x"
+  },
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
@@ -22,8 +21,14 @@
     "express": "^4.21.1",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.8.2",
-    "morgan": "^1.10.0",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
     "nodemon": "^3.1.7",
     "prettier": "^3.4.2"
-  }
+  },
+  "keywords": [],
+  "author": "NITESH-DK",
+  "license": "ISC",
+  "description": "The backend boilerplate for Node.js and Express"
 }
