@@ -1,18 +1,13 @@
 {
   "name": "backend-boilerplate",
   "version": "1.0.0",
-  "main": "src/app.js",
+  "description": "The backend boilerplate for Node and Express with Vite",
   "type": "module",
+  "main": "dist/app.js",
   "scripts": {
-    "start": "node src/app.js",
-    "dev": "nodemon src/app.js",
-    "initdb": "node src/config/initdb.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "format": "prettier --write .",
-    "check-format": "prettier --check ."
-  },
-  "engines": {
-    "node": "18.x"
+    "dev": "vite",
+    "build": "vite build",
+    "start": "node dist/app.js"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
@@ -24,11 +19,10 @@
     "morgan": "^1.10.0"
   },
   "devDependencies": {
-    "nodemon": "^3.1.7",
-    "prettier": "^3.4.2"
+    "vite": "^4.5.0",
+    "vite-plugin-node": "^3.0.1"
   },
-  "keywords": [],
-  "author": "NITESH-DK",
-  "license": "ISC",
-  "description": "The backend boilerplate for Node.js and Express"
+  "engines": {
+    "node": ">=18"
+  }
 }
