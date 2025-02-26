@@ -5,9 +5,7 @@
   "type": "module",
   "main": "dist/app.js",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "start": "node dist/app.js"
+    "start": "node src/app.js"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
@@ -17,10 +15,6 @@
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.8.2",
     "morgan": "^1.10.0"
-  },
-  "devDependencies": {
-    "vite": "^4.5.0",
-    "vite-plugin-node": "^3.0.1"
   },
   "engines": {
     "node": ">=18"
